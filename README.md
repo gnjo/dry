@@ -10,9 +10,9 @@ script(src="https://gnjo.github.io/dry/dry.js")
 
 ```
 ```
-three.util.js
-let w=320,h=240,fps=20,boxsize=10
-let {camera,scene,light,renderer,ui,mesh,helper}=threeq(canvas,w,h,fps)
+threeq.js
+let w=320,h=240,fps=20,boxsize=10,canvas=document.querySelector('canvas')
+let {camera,scene,light,ui,mesh,helper}=threeq(canvas,w,h,fps,boxsize)
 fps((time)=>{
  renderer.clear()
  renderer(camera,scene)
@@ -32,6 +32,20 @@ ui((time,ctx)=>{
 });
 
 ```
+
+```
+;(function(root){
+ function entry(canvas,w,h,fps,boxsize){
+  let o={}
+ 
+  o.fpsf
+  return init(),o
+ }
+ root.threeq=entry
+}(this);
+
+```
+
 ```
 //迷宮の生成方式
 //１マスの大きさを決める。あらゆるものは、これを基準とする。
