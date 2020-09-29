@@ -57,10 +57,15 @@ zeropos(geo,mat)
 
 ```
 
+function chaser(){
+ 
+}
+
+
+
 let scene,camera,light,cbox
 let boxsize=10
-//charser(position0,rotation0,movesize,cameraoffset) //cameraoffset
-let c=chaser([0,0,0],[0,0,0],boxsize,[0,0,boxsize*-0.49]) 
+let c=chaser(boxsize,[0,0,0],[0,0,0],[0,0,boxsize*-0.49]) 
 c.czero //axis
 cbox=c.cbox
 light=c.light
