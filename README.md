@@ -54,3 +54,40 @@ var boxsize=10
 zeropos(geo,mat)
 
 ```
+
+```
+
+let scene,camera,light,cbox
+let boxsize=10
+//charser(position0,rotation0,movesize,cameraoffset) //cameraoffset
+let c=chaser([0,0,0],[0,0,0],boxsize,[0,0,boxsize*-0.49]) 
+c.czero //axis
+cbox=c.cbox
+light=c.light
+camera=c.camera
+scene=c.scene
+;
+c.addr
+c.footsteps //addrary
+c.zeropos//
+c.zerorot// 
+c.cameraoffset//
+c.moving
+c.move(order,time)  //^v<> ud lr or F00X00Y00.N
+o.update//
+
+if(c.moving)
+ c.update()//chase recalc
+
+
+```
+
+
+
+
+
+
+
+
+
+
